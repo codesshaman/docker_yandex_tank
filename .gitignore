@@ -1,2 +1,4 @@
 .DS_Store
 .env
+conf/logs
+conf/tank_errors.log
