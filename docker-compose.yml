@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  tank:
+    image: direvius/yandex-tank
+    ports:
+      - "${TANK_PORT}:8080"
+    tty:  true
+    volumes:
+      - ./conf:/var/loadtest
+    restart: unless-stopped
+    # command: "sleep 10000"
+    container_name: yandex_tank
